@@ -41,6 +41,12 @@ class DetailViewController: UIViewController {
          genreLabel.text = movie?.Genre
          directorLabel.text = movie?.Director
          plotLabel.text = movie?.Plot
+        yearLabel.text = movie?.Year
+        durationLabel.text = movie?.Runtime
+        if movie?.Runtime == nil{
+            durationLabel.text = "N/A"
+        }
+        countryLabel.text = movie?.Country
          
          if let posterUrl = movie?.Poster, let url = URL(string: posterUrl) {
              DispatchQueue.global().async {

@@ -21,5 +21,6 @@ struct Movie : Codable {
     let Plot : String?
     let Country : String?
     let Duration: String?
+    let Runtime : String?
     
 }

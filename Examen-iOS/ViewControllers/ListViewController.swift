@@ -56,12 +56,12 @@ class ListViewController: UIViewController, UITableViewDataSource, UISearchContr
       }
       
       func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-          searchMovies("a")
+          searchMovies("Batman")
       }
       
       func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
           if (searchText.isEmpty) {
-              searchMovies("a")
+              searchMovies("Batman")
           }
       }
     // MARK: Navegación
